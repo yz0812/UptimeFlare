@@ -16,61 +16,87 @@ const workerConfig = {
   monitors: [
     // Example HTTP Monitor
     {
-      // `id` should be unique, history will be kept if the `id` remains constant
-      id: 'foo_monitor',
-      // `name` is used at status page and callback message
-      name: 'My API Monitor',
-      // `method` should be a valid HTTP Method
-      method: 'POST',
-      // `target` is a valid URL
-      target: 'https://example.com',
-      // [OPTIONAL] `tooltip` is ONLY used at status page to show a tooltip
-      tooltip: 'This is a tooltip for this monitor',
-      // [OPTIONAL] `statusPageLink` is ONLY used for clickable link at status page
-      statusPageLink: 'https://example.com',
-      // [OPTIONAL] `expectedCodes` is an array of acceptable HTTP response codes, if not specified, default to 2xx
+      // id "应该是唯一的，如果 "id "保持不变，历史记录将被保留
+      id: 'my_blog',
+      // 名称 "用于状态页面和回调信息
+      name: '我的博客',
+      // http请求方法
+      method: 'GET',
+      // 目标 "是一个有效的 URL
+      target: 'https://yz0812.github.io',
+      // [可选] `tooltip` 仅用于状态页面，以显示工具提示
+      tooltip: '我的博客',
+      // [可选] `statusPageLink` 跳转路径
+      statusPageLink: 'https://yz0812.github.io',
+      // [OPTIONAL] `expectedCodes` 成功状态值 默认是200
       expectedCodes: [200],
-      // [OPTIONAL] `timeout` in millisecond, if not specified, default to 10000
+      // [OPTIONAL] `timeout` 超时时间
       timeout: 10000,
-      // [OPTIONAL] headers to be sent
-      headers: {
-        'User-Agent': 'Uptimeflare',
-        Authorization: 'Bearer YOUR_TOKEN_HERE',
-      },
-      // [OPTIONAL] body to be sent
-      body: 'Hello, world!',
-      // [OPTIONAL] if specified, the response must contains the keyword to be considered as operational.
-      responseKeyword: 'success',
-      // [OPTIONAL] if specified, the check will run in your specified region,
+      // [OPTIONAL] 携带的请求头
+      // headers: {
+      //   'User-Agent': 'Uptimeflare',
+      //   Authorization: 'Bearer YOUR_TOKEN_HERE',
+      // },
+      // [OPTIONAL] http发送的信息
+      // body: 'Hello, world!',
+      // [OPTIONAL] 如果指定了该关键字，回复必须包含该关键字才能被视为有效。
+      // responseKeyword: 'success',
+      // [OPTIONAL] 如果指定，检查将在您指定的区域运行
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-      checkLocationWorkerRoute: 'https://xxx.example.com',
+      // checkLocationWorkerRoute: 'https://xxx.example.com',
     },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: 'chat.oaichat.cc',
+      name: 'GPT-3.5',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
+      method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
-      timeout: 5000,
+      target: 'https://chat.oaichat.cc/',
+      tooltip: '免费的3.5接口',
+      statusPageLink: 'https://chat.oaichat.cc/',
+      timeout: 10000,
     },
+    // Example TCP Monitor
+    {
+      id: 'plus.aivvm.com',
+      name: 'GPT-4 L站[plus.aivvm.com]',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://plus.aivvm.com/',
+      tooltip: '免费的GPT4',
+      statusPageLink: 'https://chatgpt.com/api/auth/session',
+      timeout: 10000,
+    },
+
+    {
+      id: 'shared.oaifree.com',
+      name: 'GPT-4 L站[shared.oaifree.com]',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://shared.oaifree.com/',
+      tooltip: '免费的GPT4',
+      statusPageLink: 'https://shared.oaifree.com/',
+      timeout: 10000,
+    },
+    
   ],
   notification: {
-    // [Optional] apprise API server URL
-    // if not specified, no notification will be sent
-    appriseApiServer: "https://apprise.example.com/notify",
-    // [Optional] recipient URL for apprise, refer to https://github.com/caronc/apprise
-    // if not specified, no notification will be sent
-    recipientUrl: "tgram://bottoken/ChatID",
-    // [Optional] timezone used in notification messages, default to "Etc/GMT"
-    timeZone: "Asia/Shanghai",
-    // [Optional] grace period in minutes before sending a notification
-    // notification will be sent only if the monitor is down for N continuous checks after the initial failure
-    // if not specified, notification will be sent immediately
-    gracePeriod: 5,
+      // [可选] apprise API 服务器 URL
+      // 如果未指定，则不会发送通知
+      // appriseApiServer: "https://apprise.example.com/notify",
+      // [可选] apprise 的接收者 URL，参考 https://github.com/caronc/apprise
+      // 如果未指定，则不会发送通知
+      // recipientUrl: "tgram://bottoken/ChatID",
+      // [可选] 通知消息中使用的时区，默认为 "Etc/GMT"
+      timeZone: "Asia/Shanghai",
+      // [可选] 发送通知前的宽限期（分钟）
+      // 只有在初次故障后连续检查 N 次均失败时才会发送通知
+      // 如果未指定，则会立即发送通知
+      // gracePeriod: 5,
+
   },
   callbacks: {
     onStatusChange: async (
