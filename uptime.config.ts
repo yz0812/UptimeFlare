@@ -53,6 +53,7 @@ const workerConfig = {
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://chat.oaichat.cc',
+      expectedCodes: [200,403],
       tooltip: '免费的3.5接口',
       statusPageLink: 'https://chat.oaichat.cc/',
       timeout: 10000,
@@ -65,6 +66,7 @@ const workerConfig = {
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://plus.aivvm.com',
+      expectedCodes: [200,403],
       tooltip: '免费的GPT4',
       statusPageLink: 'https://chatgpt.com/api/auth/session',
       timeout: 10000,
@@ -77,6 +79,7 @@ const workerConfig = {
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://shared.oaifree.com',
+      expectedCodes: [200,403],
       tooltip: '免费的GPT4',
       statusPageLink: 'https://shared.oaifree.com/',
       timeout: 10000,
