@@ -1,11 +1,11 @@
 const pageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "yz's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.site/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.site', label: 'Email Me', highlight: true },
+    { link: 'https://github.com/yz0812', label: 'GitHub' },
+    { link: 'https://yz0812.github.io/', label: 'Blog' },
+    { link: 'mailto:yz_0812@outlook.com', label: 'Email Me', highlight: true },
   ],
 }
 
