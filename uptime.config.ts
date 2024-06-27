@@ -60,14 +60,14 @@ const workerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'plus.aivvm.com',
-      name: 'GPT-4 L站[plus.aivvm.com]',
+      id: 'new.oaifree.com',
+      name: 'GPT-4 L站[new.oaifree.com]',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://plus.aivvm.com',
+      target: 'https://new.oaifree.com',
       expectedCodes: [200,403],
-      tooltip: '免费的GPT4',
+      tooltip: '经典 Pandora 服务，支持获取Access Token、Refresh Token，支持 FK 分享账号，支持 chat2api',
       statusPageLink: 'https://chatgpt.com/api/auth/session',
       timeout: 10000,
     },
@@ -80,7 +80,7 @@ const workerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: 'https://shared.oaifree.com',
       expectedCodes: [200,403],
-      tooltip: '免费的GPT4',
+      tooltip: '即开即用，无限 GPT-4o，隐私模式无惧数据泄露，用过都说好。',
       statusPageLink: 'https://shared.oaifree.com/',
       timeout: 10000,
     },
