@@ -90,7 +90,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://star.yz-0812.workers.dev',
+      target: 'https://yz0812.github.io/some-stars',
       expectedCodes: [200,403],
       tooltip: 'My Github Star',
       statusPageLink: 'https://star.yz-0812.workers.dev/',
