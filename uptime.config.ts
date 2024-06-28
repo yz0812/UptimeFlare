@@ -10,7 +10,7 @@ const pageConfig = {
 }
 
 const workerConfig = {
-  // Write KV at most every 3 minutes unless the status changed.
+  // 最多每 3 分钟写入一次 KV，除非状态发生变化。
   kvWriteCooldownMinutes: 3,
   // Define all your monitors here
   monitors: [
@@ -44,6 +44,18 @@ const workerConfig = {
       // [OPTIONAL] 如果指定，检查将在您指定的区域运行
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
       // checkLocationWorkerRoute: 'https://xxx.example.com',
+    },
+    {
+      id: 'star',
+      name: 'My Github Star',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://yz0812.github.io/some-stars',
+      expectedCodes: [200,403],
+      tooltip: 'My Github Star',
+      statusPageLink: 'https://star.yz-0812.workers.dev/',
+      timeout: 10000,
     },
     // Example TCP Monitor
     {
@@ -85,15 +97,27 @@ const workerConfig = {
       timeout: 10000,
     },
     {
-      id: 'star',
-      name: 'My Github Star',
+      id: 'www.aicnn.cn',
+      name: 'GPT-4 L站[aicnn]',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://yz0812.github.io/some-stars',
+      target: 'http://www.aicnn.cn/',
       expectedCodes: [200,403],
-      tooltip: 'My Github Star',
-      statusPageLink: 'https://star.yz-0812.workers.dev/',
+      tooltip: 'GPT-4 L站[aicnn]',
+      statusPageLink: 'http://www.aicnn.cn/',
+      timeout: 10000,
+    },
+    {
+      id: 'v.warhut.cn',
+      name: '影视站',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://v.warhut.cn/',
+      expectedCodes: [200,403],
+      tooltip: 'L站的影视站',
+      statusPageLink: 'https://v.warhut.cn/',
       timeout: 10000,
     },
   ],
