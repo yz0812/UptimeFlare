@@ -103,7 +103,7 @@ const workerConfig = {
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'http://www.aicnn.cn/oaifree',
-      expectedCodes: [200,403,523],
+      expectedCodes: [200,403,523,521],
       tooltip: 'GPT-4 L站[aicnn]',
       statusPageLink: 'http://www.aicnn.cn/oaifree',
       timeout: 10000,
