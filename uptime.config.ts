@@ -102,10 +102,10 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'http://www.aicnn.cn/oaifree',
+      target: 'http://www.aicnn.cn',
       expectedCodes: [200,403,523,521],
       tooltip: 'GPT-4 L站[aicnn]',
-      statusPageLink: 'http://www.aicnn.cn/oaifree',
+      statusPageLink: 'http://www.aicnn.cn',
       timeout: 10000,
     },
     {
