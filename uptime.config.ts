@@ -57,19 +57,7 @@ const workerConfig = {
       statusPageLink: 'https://star.yz-0812.workers.dev/',
       timeout: 10000,
     },
-    // Example TCP Monitor
-    {
-      id: 'chat.oaichat.cc',
-      name: 'GPT-3.5',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://chat.oaichat.cc',
-      expectedCodes: [200,403],
-      tooltip: '免费的3.5接口',
-      statusPageLink: 'https://chat.oaichat.cc/',
-      timeout: 10000,
-    },
+
     // Example TCP Monitor
     {
       id: 'new.oaifree.com',
