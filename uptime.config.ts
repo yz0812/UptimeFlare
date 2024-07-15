@@ -54,7 +54,7 @@ const workerConfig = {
       target: 'https://yz0812.github.io/some-stars',
       expectedCodes: [200,403],
       tooltip: 'My Github Star',
-      statusPageLink: 'https://star.yz-0812.workers.dev/',
+      statusPageLink: 'https://yz0812.github.io/some-stars',
       timeout: 10000,
     },
 
