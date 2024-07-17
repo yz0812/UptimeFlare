@@ -96,18 +96,7 @@ const workerConfig = {
       statusPageLink: 'http://www.aicnn.cn',
       timeout: 10000,
     },
-    {
-      id: 'v.warhut.cn',
-      name: '影视站',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://v.warhut.cn/',
-      expectedCodes: [200,403],
-      tooltip: 'L站的影视站',
-      statusPageLink: 'https://v.warhut.cn/',
-      timeout: 10000,
-    },
+   
   ],
   notification: {
       // [可选] apprise API 服务器 URL
