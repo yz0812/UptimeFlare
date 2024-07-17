@@ -57,21 +57,6 @@ const workerConfig = {
       statusPageLink: 'https://yz0812.github.io/some-stars',
       timeout: 10000,
     },
-
-    // Example TCP Monitor
-    {
-      id: 'new.oaifree.com',
-      name: 'GPT-4 L站[new.oaifree.com]',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://new.oaifree.com',
-      expectedCodes: [200,403],
-      tooltip: '经典 Pandora 服务，支持获取Access Token、Refresh Token，支持 FK 分享账号，支持 chat2api',
-      statusPageLink: 'https://chatgpt.com/api/auth/session',
-      timeout: 10000,
-    },
-
     {
       id: 'shared.oaifree.com',
       name: 'GPT-4 L站[shared.oaifree.com]',
