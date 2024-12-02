@@ -56,32 +56,7 @@ const workerConfig = {
       tooltip: 'My Github Star',
       statusPageLink: 'https://yz0812.github.io/some-stars',
       timeout: 10000,
-    },
-    {
-      id: 'shared.oaifree.com',
-      name: 'GPT-4 L站[shared.oaifree.com]',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://shared.oaifree.com',
-      expectedCodes: [200,403],
-      tooltip: '即开即用，无限 GPT-4o，隐私模式无惧数据泄露，用过都说好。',
-      statusPageLink: 'https://shared.oaifree.com/',
-      timeout: 10000,
-    },
-    {
-      id: 'www.aicnn.cn',
-      name: 'GPT-4 L站[aicnn]',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'http://www.aicnn.cn',
-      expectedCodes: [200,403,523,521],
-      tooltip: 'GPT-4 L站[aicnn]',
-      statusPageLink: 'http://www.aicnn.cn',
-      timeout: 10000,
-    },
-       {
+    },{
       id: 'erv00',
       name: 'serv00主页',
       // `method` should be `TCP_PING` for tcp monitors
