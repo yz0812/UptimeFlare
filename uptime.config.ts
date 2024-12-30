@@ -23,11 +23,11 @@ const workerConfig = {
       // http请求方法
       method: 'GET',
       // 目标 "是一个有效的 URL
-      target: 'https://yz0812.github.io',
+      target: 'https://blog.wuc0714.top',
       // [可选] `tooltip` 仅用于状态页面，以显示工具提示
       tooltip: '我的博客',
       // [可选] `statusPageLink` 跳转路径
-      statusPageLink: 'https://yz0812.github.io',
+      statusPageLink: 'https://blog.wuc0714.top',
       // [OPTIONAL] `expectedCodes` 成功状态值 默认是200
       expectedCodes: [200],
       // [OPTIONAL] `timeout` 超时时间
@@ -51,10 +51,10 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://yz0812.github.io/some-stars',
+      target: 'https://star.wuc0714.top',
       expectedCodes: [200,403],
       tooltip: 'My Github Star',
-      statusPageLink: 'https://yz0812.github.io/some-stars',
+      statusPageLink: 'https://star.wuc0714.top',
       timeout: 10000,
     },{
       id: 'erv00',
