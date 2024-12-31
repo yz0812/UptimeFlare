@@ -78,6 +78,17 @@ const workerConfig = {
       tooltip: 'dockerPull代理',
       statusPageLink: 'http://docker.wuc0714.top/',
       timeout: 10000,
+    },{
+      id: 'mouse',
+      name: 'dockerPull代理',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://mouse.yz-0812.workers.dev/',
+      expectedCodes: [200],
+      tooltip: '鼠标滚轮检测',
+      statusPageLink: 'https://mouse.yz-0812.workers.dev/',
+      timeout: 10000,
     }
   ],
   notification: {
