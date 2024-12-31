@@ -80,7 +80,7 @@ const workerConfig = {
       timeout: 10000,
     },{
       id: 'mouse',
-      name: 'dockerPull代理',
+      name: '鼠标滚轮检测',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
