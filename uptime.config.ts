@@ -79,7 +79,7 @@ const workerConfig = {
       statusPageLink: 'http://docker.wuc0714.top',
       timeout: 10000,
     },{
-      id: 'mouse',
+      id: 'mouseWheel',
       name: '鼠标滚轮检测',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
