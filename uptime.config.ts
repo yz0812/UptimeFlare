@@ -11,7 +11,7 @@ const pageConfig = {
 
 const workerConfig = {
   // 最多每 3 分钟写入一次 KV，除非状态发生变化。
-  kvWriteCooldownMinutes: 10,
+  kvWriteCooldownMinutes: 1,
   // Define all your monitors here
   monitors: [
     // Example HTTP Monitor
