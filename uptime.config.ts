@@ -11,7 +11,7 @@ const pageConfig = {
 
 const workerConfig = {
   // 最多每 3 分钟写入一次 KV，除非状态发生变化。
-  kvWriteCooldownMinutes: 1,
+  kvWriteCooldownMinutes: 10,
   // Define all your monitors here
   monitors: [
     // Example HTTP Monitor
@@ -79,7 +79,7 @@ const workerConfig = {
       statusPageLink: 'http://docker.wuc0714.top',
       timeout: 10000,
     },{
-      id: 'mouseWheel',
+      id: 'mouse',
       name: '鼠标滚轮检测',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
