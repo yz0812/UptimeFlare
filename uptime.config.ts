@@ -85,7 +85,7 @@ const workerConfig = {
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://mouse.yz-0812.workers.dev',
-      expectedCodes: [200],
+      expectedCodes: [200,403],
       tooltip: '鼠标滚轮检测',
       statusPageLink: 'https://mouse.yz-0812.workers.dev',
       timeout: 10000,
