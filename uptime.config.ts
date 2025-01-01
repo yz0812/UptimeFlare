@@ -84,10 +84,10 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://mouse.yz-0812.workers.dev',
+      target: 'https://mouse.wuc0714.top',
       expectedCodes: [200,403],
       tooltip: '鼠标滚轮检测',
-      statusPageLink: 'https://mouse.yz-0812.workers.dev',
+      statusPageLink: 'https://mouse.wuc0714.top',
       timeout: 10000,
     }
   ],
