@@ -96,8 +96,8 @@ const workerConfig = {
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://ikuu.wuc0714.top',
-      expectedCodes: [200,403],
-      tooltip: '鼠标滚轮检测',
+      expectedCodes: [200],
+      tooltip: 'ikuu签到',
       statusPageLink: 'https://ikuu.wuc0714.top/?host=ikuuu.one&email=yz_0812@outlook.com&pwd=oXIwJ7Sbk8L0h8ZJ',
       timeout: 10000,
     }
