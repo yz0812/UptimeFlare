@@ -98,7 +98,7 @@ const workerConfig = {
       target: 'https://ikuu.wuc0714.top',
       expectedCodes: [200],
       tooltip: 'ikuu签到',
-      statusPageLink: 'https://ikuu.wuc0714.top/?host=ikuuu.one&email=yz_0812@outlook.com&pwd=oXIwJ7Sbk8L0h8ZJ',
+      statusPageLink: 'https://ikuu.wuc0714.top?host=ikuuu.one&email=yz_0812@outlook.com&pwd=oXIwJ7Sbk8L0h8ZJ',
       timeout: 10000,
     }
   ],
