@@ -95,10 +95,10 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://ikuu.wuc0714.top',
+      target: 'https://ikuu.wuc0714.top?host=ikuuu.one&email=yz_0812@outlook.com&pwd=oXIwJ7Sbk8L0h8ZJ',
       expectedCodes: [200],
       tooltip: 'ikuu签到',
-      statusPageLink: 'https://ikuu.wuc0714.top?host=ikuuu.one&email=yz_0812@outlook.com&pwd=oXIwJ7Sbk8L0h8ZJ',
+      statusPageLink: 'https://ikuu.wuc0714.top',
       timeout: 10000,
     }
   ],
