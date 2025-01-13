@@ -117,10 +117,10 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'modbus.wuc0714.top',
+      target: 'https://modbus.wuc0714.top',
       expectedCodes: [200,403],
       tooltip: 'modbus协议工具',
-      statusPageLink: 'modbus.wuc0714.top',
+      statusPageLink: 'https://modbus.wuc0714.top',
       timeout: 10000,
     }
   ],
