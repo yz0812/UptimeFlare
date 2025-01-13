@@ -111,6 +111,17 @@ const workerConfig = {
       tooltip: '订阅转换',
       statusPageLink: 'https://sublink.wuc0714.top',
       timeout: 10000,
+    },{
+      id: 'modbus',
+      name: 'modbus协议工具',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'modbus.wuc0714.top',
+      expectedCodes: [200,403],
+      tooltip: 'modbus协议工具',
+      statusPageLink: 'modbus.wuc0714.top',
+      timeout: 10000,
     }
   ],
   notification: {
