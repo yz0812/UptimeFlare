@@ -139,7 +139,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET'，
       // `target` should be `host:port` for tcp monitors
-      target: 'https://directory-structure.wuc0714.top'，
+      target: 'https://grok.wuc0714.top'，
       expectedCodes: [200，403]，
       tooltip: 'Grok游乐园'，
       statusPageLink: 'https://grok.wuc0714.top'，
