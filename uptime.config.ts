@@ -94,30 +94,6 @@ const workerConfig = {
       timeout: 10000,
     },
     {
-      id: 'ikuu',
-      name: 'ikuu签到',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://ikuu.wuc0714.top?host=ikuuu.one&email=yz_0812@outlook.com&pwd=oXIwJ7Sbk8L0h8ZJ',
-      expectedCodes: [200],
-      tooltip: 'ikuu签到',
-      statusPageLink: 'https://ikuuu.top',
-      timeout: 10000,
-    },
-    {
-      id: 'ikuu2',
-      name: 'ikuu签到',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'https://ikuu.wuc0714.top?host=ikuuu.one&email=darkak@163.com&pwd=..00aa521',
-      expectedCodes: [200],
-      tooltip: 'ikuu签到',
-      statusPageLink: 'https://ikuuu.top',
-      timeout: 10000,
-    },
-    {
       id: 'sublink',
       name: '订阅转换',
       // `method` should be `TCP_PING` for tcp monitors
