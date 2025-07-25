@@ -128,6 +128,18 @@ const workerConfig = {
       tooltip: '生成目录结构树生成器工具',
       statusPageLink: 'https://directory-structure.wuc0714.top',
       timeout: 10000,
+    },
+    {
+      id: 'claudekey',
+      name: 'claudekey转换工具',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://dclaudekey.wuc0714.top',
+      expectedCodes: [200, 403],
+      tooltip: '生成目录结构树生成器工具',
+      statusPageLink: 'https://claudekey.wuc0714.top',
+      timeout: 10000,
     }
   ],
   notification: {
