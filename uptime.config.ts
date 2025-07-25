@@ -135,7 +135,7 @@ const workerConfig = {
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://dclaudekey.wuc0714.top',
+      target: 'https://claudekey.wuc0714.top',
       expectedCodes: [200, 403],
       tooltip: '生成目录结构树生成器工具',
       statusPageLink: 'https://claudekey.wuc0714.top',
