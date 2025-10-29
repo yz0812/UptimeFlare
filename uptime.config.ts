@@ -94,15 +94,15 @@ const workerConfig = {
       timeout: 10000,
     },
     {
-      id: 'sublink',
-      name: '订阅转换',
+      id: 'xml',
+      name: 'xml转换',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: 'https://sublink.wuc0714.top',
+      target: 'https://xml.wuc0714.top',
       expectedCodes: [200, 403],
-      tooltip: '订阅转换',
-      statusPageLink: 'https://sublink.wuc0714.top',
+      tooltip: 'xml转换',
+      statusPageLink: 'https://xml.wuc0714.top',
       timeout: 10000,
     },
     {
