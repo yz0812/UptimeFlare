@@ -69,18 +69,7 @@ const workerConfig = {
       statusPageLink: 'http://endethan.serv00.net/',
       timeout: 10000,
     },
-    {
-      id: 'dockerPull',
-      name: 'dockerPull代理',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
-      // `target` should be `host:port` for tcp monitors
-      target: 'http://docker.wuc0714.top',
-      expectedCodes: [200],
-      tooltip: 'dockerPull代理',
-      statusPageLink: 'http://docker.wuc0714.top',
-      timeout: 10000,
-    },
+
     {
       id: 'mouse',
       name: '鼠标滚轮检测',
