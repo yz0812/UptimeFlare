@@ -16,6 +16,7 @@ const workerConfig = {
   monitors: [
     // Example HTTP Monitor
     {
+      
       // id "应该是唯一的,如果 "id "保持不变,历史记录将被保留
       id: 'my_blog',
       // 名称 "用于状态页面和回调信息
