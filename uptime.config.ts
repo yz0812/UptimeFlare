@@ -96,18 +96,18 @@ const workerConfig = {
             statusPageLink: 'http://125.208.21.128:11693/',
             timeout: 10000,
         },
-        {
-            id: 'star',
-            name: 'My Github Star',
-            // `method` should be `TCP_PING` for tcp monitors
-            method: 'GET',
-            // `target` should be `host:port` for tcp monitors
-            target: 'https://star.yz-0812.workers.dev',
-            expectedCodes: [200, 403],
-            tooltip: 'My Github Star',
-            statusPageLink: 'https://star.yz-0812.workers.dev',
-            timeout: 10000,
-        },
+        // {
+        //     id: 'star',
+        //     name: 'My Github Star',
+        //     // `method` should be `TCP_PING` for tcp monitors
+        //     method: 'GET',
+        //     // `target` should be `host:port` for tcp monitors
+        //     target: 'https://star.yz-0812.workers.dev',
+        //     expectedCodes: [200, 403],
+        //     tooltip: 'My Github Star',
+        //     statusPageLink: 'https://star.yz-0812.workers.dev',
+        //     timeout: 10000,
+        // },
         {
             id: 'erv00',
             name: 'serv00主页',
